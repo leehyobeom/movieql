@@ -1,0 +1,13 @@
+
+
+type Query{
+    movies: [String]!,
+    movie(id: Int!): String
+}
+
+type Mutation{
+    updateMovie(id:Int!,name:String!): Boolean,
+    deleteMovie(id:Int!): Boolean
+}
+
+
